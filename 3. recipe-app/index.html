@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recipes App</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class=".mobile-container">
+    <div class="mobile-container">
       <header>
         <input type="text" />
         <button id="search"><i class="fas fa-search"></i></button>
@@ -36,21 +39,15 @@
               alt=""
             /><span>Lasagne</span>
           </li>
+          <li>
+            <img
+              src="https://www.themealdb.com/images/media/meals/xxpqsy1511452222.jpg"
+              alt=""
+            /><span>Veggie Soup</span>
+          </li>
         </ul>
       </div>
-      <div class="meals">
-          <span class="random">
-              Random Recipe
-            </span>
-        <div class="meal-header">
-          <img src="https://png2.cleanpng.com/sh/80cb56638bb604999dd6ac1ca798dae4/L0KzQYm3U8MyN5D1iZH0aYP2gLBuTf1ifKVmip95YX7odcO0if5lcZJzRdVAaYPsfra0kBhicJoyiNN3ZXX1PcHojPFsNaFmRdt3ZHnkfn7tjB9lNWZmetg6NUC4R4KCUvM4NmQ6Uak8OUS6QYa5UsQ4OmIAT6YBNUKxgLBu/kisspng-mattar-paneer-indian-cuisine-shahi-paneer-palak-pa-indian-food-5abf15057192c7.3597394715224721974652.png" alt="" />
-        </div>
-        <div class="meal-body">
-          <h4>Veggie Veggies</h4>
-          <button>
-              <i class="fa fa-heart"></i>
-          </button>
-        </div>
+      <div class="meals" id="meals"></div>
       </div>
     </div>
   </body>
