@@ -69,6 +69,7 @@ header button {
   position: relative;
   margin: 5px;
   width: 75px;
+  cursor: pointer;
 }
 
 .fav-meals li .clear {
@@ -109,6 +110,7 @@ header button {
   margin: 1.5rem;
   box-shadow: 0 0 10px 2px #3333331a;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .meal-header {
@@ -151,8 +153,6 @@ header button {
 
 .meal-body .fav-btn.active {
   color: rebeccapurple;
-  border: none;
-  font-size: 1.2rem;
 }
 
 .popup-container {
@@ -167,7 +167,7 @@ header button {
   align-items: center;
 }
 
-.popup-container .hidden {
+.popup-container.hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -177,14 +177,13 @@ header button {
   border-radius: 5px;
   padding: 0 2rem;
   max-width: 600px;
+  position: relative;
   width: 100%;
+  max-height: 100vh;
+  overflow: auto;
 }
 
-.meal-info h1 {
-  text-align: center;
-}
-
-.meal-info .close-popup {
+.popup .close-popup {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -192,5 +191,8 @@ header button {
   position: absolute;
   top: 1rem;
   right: 1rem;
+}
 
+.meal-info h1 {
+  text-align: center;
 }
