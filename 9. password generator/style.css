@@ -17,7 +17,7 @@ body {
 
 .pw-container {
   background-color: rgb(46, 12, 80);
-  width: 400px;
+  min-width: 400px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -32,15 +32,16 @@ body {
   align-items: center;
   display: flex;
   position: relative;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 1rem;
+  overflow: auto;
 }
 
 .pw button {
   background-color: white;
   color: rgb(29, 2, 56);
   position: absolute;
-  transform: translate(0, -50%);
+  transform: translate(0, -20%);
   padding: 0.25rem;
   border: none;
   font-family: inherit;
@@ -54,7 +55,7 @@ body {
 
 .pw:hover button {
   opacity: 1;
-  transform: translate(0, -80%);
+  transform: translate(0, 0%);
 }
 
 .pw-body {
@@ -78,4 +79,5 @@ body {
     width: 100%;
     padding: 0.75rem;
     margin-top: 1rem;
+    cursor: pointer;
 }
